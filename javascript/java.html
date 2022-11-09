@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        liczba1 = 100; //int - zmienna liczbowa
+        liczba2 = 200; //int - zmienna liczbowa
+        a = "Piotr Urban"; //string - zmienna tekstowa
+        b = "Stefan Batory"; //string - zmienna tekstowa 
+
+        function elo() {
+            return "Siemano!!!";
+        }
+
+        function dupa() {
+            x = document.getElementById("liczba").value;
+            serce = "<3";
+            while (x-1) {
+                x--;
+                serce = serce + "<3";
+            }
+            document.getElementById("wynik").innerText = serce;
+        }
+    </script>
+        <h1 id="wynik">Wynik</h1>
+        <input type="number" id="liczba"> Podaj liczbe
+        <br>
+        <button onclick="dupa()">Wyświetl</button>
+</body>
+</html>
